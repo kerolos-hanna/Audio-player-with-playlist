@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Audio</title>
+  <link rel="stylesheet" href="./fontawesome-free-5.13.0-web/css/all.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <audio id="audio"preload="metadata">
+      <source src="./song/01 - Ala Fekra.mp3" data-track-number="1" />
+      <source src="./song/04.Bahlm Bek.mp3" data-track-number="2" />
+      <source src="./song/09 - Shams Bahr.mp3" data-track-number="3" />
+      <source src="./song/13. Helm Seneen.mp3" data-track-number="4" />
+      <source src="./song/La.Moustahila.mp3" data-track-number="5" />
+      <source
+        src="./song/Mahmoud El Esseily – Ganna Tekfena  ¦  محمود العسيلى – جنة تكفينا  “Exclusive Music Video 2020“.mp3"
+        data-track-number="6" />
+      Your browser does not support HTML5 audio.
+    </audio>
+    <img src="./song/La.Moustahila.mp3" alt="">
+
+    <div class="control">
+      <div class="range">
+        <span class="duration" id="end">0.00</span>
+        <span class="duration" id="start">0.00</span> 
+        <input type="range" name="" id="song-range">
+      </div>
+      <div class="icons">
+        <i class="fas fa-backward" id="backward"></i>
+        <i class="fas fa-play-circle" id="play"></i>
+        <i class="fas fa-pause-circle" id="pause"></i>
+        <i class="fas fa-stop-circle" id="stop"></i>
+        <i class="fas fa-forward" id="forward"></i>
+      </div>
+      <div class="vol">
+        <i class="fas fa-volume-down" id="vol-down"></i>
+        <i class="fas fa-volume-up" id="vol-up"></i>
+        <i class="fas fa-volume-mute" id="vol-mute"></i>
+        <input type="range" name="" id="vol" min="0" max="100">
+        <span id="volPres"></span>
+      </div>
+      <!-- <i class="far fa-pause-circle"></i> -->
+    </div>
+    <div class="play-list">
+
+      <div class="play-list-row" data-track-row="1">
+        <div class="track-title">
+          <a class="playlist-track" href="#" data-play-track="1">1. Ala Fekra</a>
+        </div>
+      </div>
+      <div class="play-list-row" data-track-row="2">
+        <div class="track-title">
+          <a class="playlist-track" href="#" data-play-track="2">2. Bahlm Bek</a>
+        </div>
+      </div>
+      <div class="play-list-row" data-track-row="3">
+        <div class="track-title">
+          <a class="playlist-track" href="#" data-play-track="3">3. Shams Bahr</a>
+        </div>
+      </div>
+      <div class="play-list-row" data-track-row="4">
+        <div class="track-title">
+          <a class="playlist-track" href="#" data-play-track="4">4. Helm Seneen</a>
+        </div>
+      </div>
+      <div class="play-list-row" data-track-row="5">
+        <div class="track-title">
+          <a class="playlist-track" href="#" data-play-track="5">5. La.Moustahila</a>
+        </div>
+      </div>
+      <div class="play-list-row" data-track-row="6">
+        <div class="track-title">
+          <a class="playlist-track" href="#" data-play-track="6">6. Mahmoud El Esseily – Ganna Tekfena</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <script src="main.js"></script>
+</body>
+
+</html>
